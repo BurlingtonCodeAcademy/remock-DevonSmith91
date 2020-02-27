@@ -9,9 +9,23 @@ body {
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .emphasis {
     font-weight: bold;
     display: inline-block;
+}
+
+#home {
+    position: absolute;
+    display: inline-block;
+    width: 5vw;
+    height: 5vw;
+    font-size: 2.8em;
+    opacity: .5;
+    color: rgba(6, 35, 131, 0.774);
 }
 
 #section1 {
@@ -42,8 +56,6 @@ h1 {
 }
 
 /* Image row classes, can and SHOULD reuse?*/
-
-
 
 #moreButton {
     display: flex;
@@ -172,7 +184,7 @@ h1 {
     height: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width:auto;
+    width: auto;
 }
 
 /* Page Styles */
