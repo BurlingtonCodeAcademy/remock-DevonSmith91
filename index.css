@@ -1,9 +1,6 @@
 body {
-    font-family: 'Comfortaa', ;
-    font-family: 'Permanent Marker', ;
-    font-family: 'Satisfy', ;
-    font-family: 'Tomorrow', ;
-    color: rgba(6, 35, 131, 0.774);
+    font-family: 'Abril Fatface';
+    color: rgba(6, 60, 131, 0.808);
     font-size: 1em;
     background-color: rgba(244, 244, 253, 0.116);
     margin: 0px;
@@ -42,13 +39,14 @@ a {
     width: 60vw;
 }
 
-h1 {
-    font-size: 2.5em;
-    text-shadow: rgb(228, 212, 212) 2px 2px;
+#title {
+    font-size: 5rem;
+    text-shadow: 4px 4px rgba(71, 68, 68, 0.199);
 }
 
 .lineBreak {
     border: solid;
+    border-color: rgba(6, 60, 131, 0.432);
     border-left: none;
     border-right: none;
     width: 60vw;
@@ -75,10 +73,11 @@ h1 {
 }
 
 .image {
-    width: 15vw;
+    width: 18vw;
     height: auto;
     margin-bottom: 35px;
-    border: solid 5px rgba(63, 59, 59, 0.459);
+    /* border: solid 3px rgba(63, 59, 59, 0.459); */
+    box-shadow: 3.5px 3.5px rgba(77, 75, 75, 0.418);
 }
 
 .caption {
