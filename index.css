@@ -29,7 +29,6 @@ a {
 #section1 {
     display: flex;
     justify-content: center;
-    min-height: 100vh;
 }
 
 #wrapper1 {
@@ -42,6 +41,8 @@ a {
 #title {
     font-size: 5rem;
     text-shadow: 4px 4px rgba(71, 68, 68, 0.199);
+    display: block;
+    text-align: center;
 }
 
 .lineBreak {
@@ -70,6 +71,17 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.ImgWithSub-Wide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    height: 30vw;
+    padding: 20px;
+    padding-top: 0;
 }
 
 .image {
@@ -128,7 +140,18 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+#wrapper2Blog {
     width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paragraphHeader {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 /* Left Column */
@@ -139,6 +162,7 @@ a {
     align-self: flex-start;
     display: flex;
     flex-direction: column;
+    margin-left: 50px;
 }
 
 .wideImage {
@@ -369,4 +393,18 @@ p {
     border: 1px solid;
     border-color: rgb(2, 24, 97);
     text-align: center;
+}
+
+@media screen and (max-width:750px) {
+    #home {
+        display: block;
+        position: static;
+    }
+    .imageRow {
+        display: flex;
+        flex-direction: column;
+    }
+    .image {
+        width: 50vw
+    }
 }
