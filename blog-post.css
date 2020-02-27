@@ -17,14 +17,12 @@ body {
 #section1 {
     display: flex;
     justify-content: center;
-    min-height: 100vh;
 }
 
 #wrapper1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60vw;
 }
 
 h1 {
@@ -44,32 +42,6 @@ h1 {
 
 /* Image row classes, can and SHOULD reuse?*/
 
-.imageRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 12vh;
-    width: 60vw;
-}
-
-.ImgWithSub {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.image {
-    width: 15vw;
-    height: auto;
-    margin-bottom: 35px;
-    border: solid 5px rgba(63, 59, 59, 0.459);
-}
-
-.caption {
-    margin-bottom: 20px
-}
-
 #moreButton {
     display: flex;
     justify-content: space-between;
@@ -87,22 +59,6 @@ h1 {
     border-radius: 100%;
 }
 
-/* quote block */
-
-#quoteBlock {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.411), rgba(15, 37, 110, 0.404), rgba(255, 255, 255, 0.753));
-    width: auto;
-    height: 250px;
-    font-size: 3em;
-    text-shadow: rgb(164, 164, 168) 3px 3px;
-    margin-bottom: 60px;
-    margin-top: 50px;
-}
-
 /*2nd section*/
 
 #section2 {
@@ -114,14 +70,12 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 60vw;
 }
 
 /* Left Column */
 
 #columnLeft {
     width: 40vw;
-    margin-right: 50px;
     align-self: flex-start;
     display: flex;
     flex-direction: column;
@@ -140,28 +94,7 @@ h1 {
     width: 20vw;
     display: flex;
     flex-direction: column;
-}
-
-.contReading {
-    text-align: center;
-    display: flex;
-    margin-top: 5vh;
-    width: 14vw;
-    background-color: rgba(6, 35, 131, 0.466);
-    padding: 10px;
-    color: rgba(255, 255, 255, 0.952);
-    border: 1px solid;
-    border-color: rgb(2, 24, 97);
-}
-
-.lineBreakLeft {
-    border: solid;
-    border-left: none;
-    border-right: none;
-    width: 40vw;
-    height: 5px;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-right: 50px;
 }
 
 /* Right Column Date Blurbs */
