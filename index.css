@@ -408,3 +408,22 @@ p {
         width: 50vw
     }
 }
+
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 1000ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+
+.slideIn {
+    transform: translateX(140%);
+    transition: transform 400ms ease-in;
+}
+
+.slideIn.appear {
+    transform: translatex(0)
+}
