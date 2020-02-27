@@ -1,0 +1,286 @@
+body {
+    font-family: 'Comfortaa', ;
+    font-family: 'Permanent Marker', ;
+    font-family: 'Satisfy', ;
+    font-family: 'Tomorrow', ;
+    color: rgba(6, 35, 131, 0.774);
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.185);
+    margin: 0px;
+}
+
+.emphasis {
+    font-weight: bold;
+    display: inline-block;
+}
+
+#section1 {
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: rgb(228, 212, 212) 2px 2px;
+}
+
+.lineBreak {
+    border: solid;
+    border-left: none;
+    border-right: none;
+    width: 60vw;
+    height: 5px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+/* Image row classes, can and SHOULD reuse?*/
+
+
+
+#moreButton {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+    background-color: rgba(6, 35, 131, 0.466);
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.952);
+    border: 1px solid;
+    border-color: rgb(2, 24, 97);
+}
+
+#pageIcon {
+    width: auto;
+    height: 3vh;
+    border-radius: 100%;
+}
+
+/*2nd section*/
+
+#section2 {
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+/* Left Column */
+
+#columnLeft {
+    width: 40vw;
+    margin-right: 50px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.wideImage {
+    width: 40vw;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    border: solid 5px rgba(63, 59, 59, 0.459);
+}
+
+#columnRight {
+    align-self: flex-start;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Right Column Date Blurbs */
+
+.date {
+    display: flex;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+    width: 10vw;
+    justify-content: center;
+    border-radius: 5%;
+    background-color: rgba(1, 24, 98, 0.795);
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.952);
+    border: 1px solid;
+    border-color: rgb(2, 24, 97);
+}
+
+.lineBreakRight {
+    border: solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 20vw;
+    height: 5px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+#dateSectionBreak {
+    border: solid;
+    border-left: none;
+    border-right: none;
+    width: 20vw;
+    height: 5px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+/* Right Column wrapped pictures */
+
+.wrappedPic {
+    float: left;
+    width: 10vw;
+    height: 10vw;
+    border: solid 5px rgba(63, 59, 59, 0.459);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.wrappedPicButton {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    background-color: rgba(6, 35, 131, 0.466);
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.952);
+    border: 1px solid;
+    border-color: rgb(2, 24, 97);
+    font-size: .75rem;
+}
+
+/* Imported footer */
+
+#footerBreak {
+    border: solid;
+    border-left: none;
+    border-right: none;
+    height: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:auto;
+}
+
+/* Page Styles */
+
+#footer {
+    background-color: lightgrey;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: auto;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: 0
+}
+
+#text-area {
+    width: 28.5vw;
+    resize: none;
+    height: 12vw;
+}
+
+/* Overall Layout */
+
+.container {
+    display: grid;
+    width: 60vw;
+    height: 275px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-areas: "header  header    header    header" "sidebar sidebar content-2 content-2" "sidebar sidebar content-3 content-3" "sidebar  sidebar content-3 content-3";
+}
+
+.header {
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content-1 {
+    grid-area: content-1;
+}
+
+.content-2 {
+    grid-area: content-2;
+    font-size: .7em;
+}
+
+/* Contact Info */
+
+.content-3 {
+    grid-area: content-3;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "address twitter" "address insta" "number  dribble" "email   facebook"
+}
+
+.contact {
+    font-size: .7em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.address {
+    grid-area: address;
+}
+
+/* Comment Inputs */
+
+#nameInputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+#firstName {
+    width: 13vw;
+}
+
+#lastName {
+    width: 13vw;
+}
+
+#comments {
+    resize: none;
+}
+
+#messageButton {
+    width: 14vw;
+    background-color: rgba(6, 35, 131, 0.466);
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.952);
+    border: 1px solid;
+    border-color: rgb(2, 24, 97);
+    text-align: center;
+}
