@@ -12,6 +12,7 @@ body {
 .emphasis {
     font-weight: bold;
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 #section1 {
@@ -143,6 +144,7 @@ h1 {
     border: solid 5px rgba(63, 59, 59, 0.459);
     margin-right: 20px;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .wrappedPicButton {
@@ -157,6 +159,7 @@ h1 {
     border: 1px solid;
     border-color: rgb(2, 24, 97);
     font-size: .75rem;
+    margin-top: 10px;
 }
 
 /* Imported footer */
