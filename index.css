@@ -5,7 +5,7 @@ body {
     font-family: 'Tomorrow', ;
     color: rgba(6, 35, 131, 0.774);
     font-size: 1em;
-    background-color: rgba(255, 255, 255, 0.185);
+    background-color: rgba(244, 244, 253, 0.116);
     margin: 0px;
 }
 
@@ -144,9 +144,10 @@ h1 {
 
 .contReading {
     text-align: center;
+    font-size: 1vw;
     display: flex;
     margin-top: 5vh;
-    width: 14vw;
+    width: 12vw;
     background-color: rgba(6, 35, 131, 0.466);
     padding: 10px;
     color: rgba(255, 255, 255, 0.952);
@@ -210,6 +211,7 @@ h1 {
     border: solid 5px rgba(63, 59, 59, 0.459);
     margin-right: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .wrappedPicButton {
@@ -220,6 +222,7 @@ h1 {
     width: 12vw;
     background-color: rgba(6, 35, 131, 0.466);
     padding: 5px;
+    margin-top: 5px;
     color: rgba(255, 255, 255, 0.952);
     border: 1px solid;
     border-color: rgb(2, 24, 97);
@@ -235,7 +238,7 @@ h1 {
     height: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width:auto;
+    width: auto;
 }
 
 /* Page Styles */
@@ -273,7 +276,6 @@ p {
 .container {
     display: grid;
     width: 60vw;
-    height: 275px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
     grid-template-areas: "header  header    header    header" "sidebar sidebar content-2 content-2" "sidebar sidebar content-3 content-3" "sidebar  sidebar content-3 content-3";
@@ -296,7 +298,7 @@ p {
 
 .content-2 {
     grid-area: content-2;
-    font-size: .7em;
+    font-size: .8em;
 }
 
 /* Contact Info */
@@ -305,6 +307,7 @@ p {
     grid-area: content-3;
     display: grid;
     grid-gap: 1rem;
+    font-size: 1.2em;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "address twitter" "address insta" "number  dribble" "email   facebook"
 }
