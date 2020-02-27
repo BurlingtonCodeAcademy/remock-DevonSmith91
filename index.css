@@ -140,6 +140,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow: auto;
 }
 
 #wrapper2Blog {
@@ -150,7 +151,7 @@ a {
 }
 
 .paragraphHeader {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
 }
 
@@ -185,7 +186,7 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 5vh;
-    width: 12vw;
+    width: auto;
     background-color: rgba(6, 35, 131, 0.466);
     padding: 10px;
     color: rgba(255, 255, 255, 0.952);
@@ -306,7 +307,8 @@ a {
 }
 
 p {
-    margin: 0
+    margin: 0;
+    padding: 0;
 }
 
 #text-area {
@@ -406,5 +408,22 @@ p {
     }
     .image {
         width: 50vw
+    }
+
+    .date {
+        margin: 10px;
+    }
+    .lineBreakRight {
+        margin: 10px;
+    }
+    #columnRight {
+        justify-content: center;
+        font-size: .75rem;
+    }
+    #columnLeft{
+        font-size: .9rem;
+    }
+    .contReading {  
+        font-size: .6rem;
     }
 }
