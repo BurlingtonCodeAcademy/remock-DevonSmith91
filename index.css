@@ -9,6 +9,11 @@ body {
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .emphasis {
     font-weight: bold;
     display: inline-block;
@@ -143,9 +148,9 @@ h1 {
 }
 
 .contReading {
-    text-align: center;
     font-size: 1vw;
     display: flex;
+    justify-content: center;
     margin-top: 5vh;
     width: 12vw;
     background-color: rgba(6, 35, 131, 0.466);
@@ -153,6 +158,11 @@ h1 {
     color: rgba(255, 255, 255, 0.952);
     border: 1px solid;
     border-color: rgb(2, 24, 97);
+}
+
+.buttonStyle {
+    display: flex;
+    align-items: center;
 }
 
 .lineBreakLeft {
@@ -342,7 +352,7 @@ p {
 }
 
 #messageButton {
-    width: 14vw;
+    width: 12vw;
     background-color: rgba(6, 35, 131, 0.466);
     padding: 5px;
     color: rgba(255, 255, 255, 0.952);
