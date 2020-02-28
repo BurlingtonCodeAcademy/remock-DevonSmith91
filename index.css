@@ -190,22 +190,19 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 5vh;
-    width: 12vw;
+    width: auto;
+    color: rgba(6, 60, 131, 0.747);
     /* background-color: rgba(6, 35, 131, 0.466); */
     padding: 10px;
     /* color: rgba(255, 255, 255, 0.952); */
     border: 1px solid;
     border-color: rgba(6, 60, 131, 0.747);
+    transition-duration: .25s;
+    transition-timing-function: linear;
 }
 
 .contReading:hover {
-    border-color: rgba(12, 17, 22, 0.925)
-}
-
-.buttonStyle {
-    display: flex;
-    align-items: center;
-    color: rgba(6, 60, 131, 0.747)
+    border-color: rgba(12, 17, 22, 0.925);
 }
 
 .buttonStyle:hover {
@@ -289,143 +286,6 @@ a {
     font-size: .75rem;
 }
 
-/* Imported footer */
-
-#footerBreak {
-    border: solid;
-    border-left: none;
-    border-right: none;
-    height: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: auto;
-}
-
-/* Page Styles */
-
-#footer {
-    background-color: lightgrey;
-    display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 0px;
-    padding-right: 0;
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: 40px;
-    width: auto;
-    justify-content: center;
-}
-
-.item {
-    display: flex;
-    flex-direction: column;
-}
-
-p {
-    margin: 0
-}
-
-#text-area {
-    width: 28.5vw;
-    resize: none;
-    height: 12vw;
-}
-
-/* Overall Layout */
-
-.container {
-    display: grid;
-    width: 60vw;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    grid-template-areas: "header  header    header    header" "sidebar sidebar content-2 content-2" "sidebar sidebar content-3 content-3" "sidebar  sidebar content-3 content-3";
-}
-
-.header {
-    grid-area: header;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 15px;
-}
-
-.sidebar {
-    grid-area: sidebar;
-}
-
-.content-1 {
-    grid-area: content-1;
-}
-
-.content-2 {
-    grid-area: content-2;
-    font-size: .8em;
-}
-
-/* Contact Info */
-
-.content-3 {
-    grid-area: content-3;
-    display: grid;
-    grid-gap: 1rem;
-    font-size: 1.2em;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "address twitter" "address insta" "number  dribble" "email   facebook"
-}
-
-.contact {
-    font-size: .7em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.address {
-    grid-area: address;
-}
-
-/* Comment Inputs */
-
-#nameInputs {
-    display: flex;
-    justify-content: space-between;
-}
-
-#firstName {
-    width: 13vw;
-}
-
-#lastName {
-    width: 13vw;
-}
-
-#comments {
-    resize: none;
-}
-
-#messageButton {
-    width: 12vw;
-    background-color: rgba(6, 35, 131, 0.466);
-    padding: 5px;
-    color: rgba(255, 255, 255, 0.952);
-    border: 1px solid;
-    border-color: rgb(2, 24, 97);
-    text-align: center;
-}
-
-@media screen and (max-width:750px) {
-    #home {
-        display: block;
-        position: static;
-    }
-    .imageRow {
-        display: flex;
-        flex-direction: column;
-    }
-    .image {
-        width: 50vw
-    }
-}
-
 /* Transition Effects */
 
 .fade-in{
@@ -467,4 +327,170 @@ p {
 .slideInImg.appear {
     transform: translateX(0);
     opacity: 1;
+}
+
+/* Revised Flex Footer */
+#footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: .8em;
+    background-color: rgb(221, 214, 214);
+    margin-top: 10px;
+}
+#footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    background-color: rgb(221, 214, 214);
+    width: auto;
+}
+#footerTitle {
+    margin-top: 40px;
+}
+#textBox {
+    min-height: 8rem;
+    margin-bottom: 1rem;
+    resize: none;
+}
+#sendMessage {
+    margin-top: .1rem;
+}
+#formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#firstLastName {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+#firstName {
+    margin-right: 10px;
+    resize: none;
+}
+#email {
+    resize: none;
+}
+#bottomRow {
+    display: flex;
+}
+#contentHeader {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+#contactInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30vw;
+    margin-left: 1rem;
+    justify-content: ;
+}
+#contactTableWrapper {
+    display: flex;
+}
+#contactColumLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15vw;
+}
+#contactColumRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15vw;
+}
+.contact-item {
+    margin: 5px
+}
+@media screen and (max-width:750px) {
+    #section1 {
+        align-items: center;
+    }
+    .smallHeader {
+        text-align: center;
+    }
+    #home {
+        display: block;
+        position: static;
+    }
+    .imageRow {
+        display: flex;
+        flex-direction: column;
+    }
+    .image {
+        width: 50vw
+    }
+    .date {
+        margin: 10px;
+    }
+    .lineBreakRight {
+        margin: 10px;
+    }
+    #columnRight {
+        justify-content: center;
+        font-size: .75rem;
+    }
+    #columnLeft {
+        font-size: .9rem;
+    }
+    .contReading {
+        font-size: .6rem;
+    }
+    /* media query footer--------------------------------------------------------------------------------------------- */
+    body {
+        width: auto;
+    }
+    #footer {
+        font-size: .6rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    #footerWrapper {
+        display: block;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    #bottomRow {
+        align-self: center;
+    }
+    #contentHeader {
+        margin-top: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #contactTableWrapper{
+       display: flex;
+       flex-direction: row; 
+    }
+    #firstLastName {
+        margin: 10px;
+        width: auto;
+    }
+    #firstName {
+        width: auto;
+        resize: none;
+    }
+    #email {
+        resize: none;
+    }
+    #contactTableWrapper {
+        font-size: .5rem;
+    }
+    #contactInfo {
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+    }
 }
