@@ -345,6 +345,14 @@ a {
     background-color: rgb(221, 214, 214);
     margin-top: 10px;
 }
+.iconContainer{
+    flex-direction: column;
+}
+.icon{
+    width:1rem;
+    height: 1rem;
+}
+
 
 #footerWrapper {
     display: flex;
@@ -414,7 +422,6 @@ a {
 
 #contactColumLeft {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     width: 15vw;
 }
