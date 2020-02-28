@@ -190,23 +190,18 @@ a {
     align-items: center;
     margin-top: 5vh;
     width: auto;
-    background-color: rgba(6, 35, 131, 0.466);
+    color: rgba(6, 60, 131, 0.747);
+    /* background-color: rgba(6, 35, 131, 0.466); */
     padding: 10px;
     /* color: rgba(255, 255, 255, 0.952); */
     border: 1px solid;
-    border-color: rgb(2, 24, 97);
-    transition-duration: .1s;
+    border-color: rgba(6, 60, 131, 0.747);
+    transition-duration: .25s;
     transition-timing-function: linear;
 }
 
 .contReading:hover {
-    background-color: rgb(53, 60, 94);
-}
-
-.buttonStyle {
-    display: flex;
-    align-items: center;
-    color: rgba(6, 60, 131, 0.747)
+    border-color: rgba(12, 17, 22, 0.925);
 }
 
 .buttonStyle:hover {
@@ -296,24 +291,50 @@ a {
     font-size: .75rem;
 }
 
-#messageButton {
-    width: 12vw;
-    background-color: rgba(6, 35, 131, 0.466);
-    padding: 5px;
-    color: rgba(255, 255, 255, 0.952);
-    border: 1px solid;
-    border-color: rgb(2, 24, 97);
-    text-align: center;
-    transition-duration: .1s;
-    transition-timing-function: linear
+/* Transition Effects */
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 1000ms ease-in;
 }
 
-#messageButton:hover {
-    background-color: rgb(53, 60, 94);
+.fade-in1{
+    opacity: 0;
+    transition: opacity 1000ms ease-in;
+}
+
+.fade-in2{
+    opacity: 0;
+    transition: opacity 1000ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+
+.slideIn {
+    transform: translateX(140%);
+    transition: opacity 600ms ease-in, transform 400ms ease-in;
+    opacity: 0;
+}
+
+.slideInImg {
+    transform: translateX(70%);
+    transition: opacity 600ms ease-in, transform 350ms ease-in;
+    opacity: 0;
+}
+
+.slideIn.appear {
+    transform: translatex(0);
+    opacity: 1;
+}
+
+.slideInImg.appear {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 /* Revised Flex Footer */
-
 #footer {
     align-items: center;
     display: flex;
@@ -322,7 +343,6 @@ a {
     background-color: rgb(221, 214, 214);
     margin-top: 10px;
 }
-
 #footerWrapper {
     display: flex;
     justify-content: space-between;
@@ -330,85 +350,68 @@ a {
     background-color: rgb(221, 214, 214);
     width: auto;
 }
-
 #footerTitle {
     margin-top: 40px;
 }
-
 #textBox {
     min-height: 8rem;
     margin-bottom: 1rem;
     resize: none;
 }
-
+#sendMessage {
+    margin-top: .1rem;
+}
 #formDiv {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 #firstLastName {
     display: flex;
     justify-content: center;
     margin: 0;
     margin-bottom: .5rem;
 }
-
 #firstName {
     margin-right: 10px;
     resize: none;
 }
-
 #email {
     resize: none;
 }
-
-#messageButton {
-    background-color: rgba(6, 35, 131, 0.466);
-    width: auto;
-}
-
 #bottomRow {
     display: flex;
 }
-
 #contentHeader {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1rem;
 }
-
 #contactInfo {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 30vw;
     margin-left: 1rem;
-    justify-content: space-between;
 }
-
 #contactTableWrapper {
     display: flex;
 }
-
 #contactColumLeft {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 15vw;
 }
-
 #contactColumRight {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 15vw;
 }
-
 .contact-item {
     margin: 5px
 }
-
 @media screen and (max-width:750px) {
     #section1 {
         align-items: center;
