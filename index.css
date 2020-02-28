@@ -426,6 +426,7 @@ p {
     }
 }
 
+/* Transition Effects */
 
 .fade-in{
     opacity: 0;
@@ -453,8 +454,8 @@ p {
 }
 
 .slideInImg {
-    transform: translateX(100%);
-    transition: opacity 600ms ease-in, transform 400ms ease-in;
+    transform: translateX(70%);
+    transition: opacity 600ms ease-in, transform 350ms ease-in;
     opacity: 0;
 }
 
