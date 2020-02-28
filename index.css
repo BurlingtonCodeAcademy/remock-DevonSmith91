@@ -377,6 +377,7 @@ a {
 
 #firstLastName {
     display: flex;
+    justify-self: ;
     justify-content: center;
     margin: 0;
     margin-bottom: .5rem;
@@ -385,6 +386,7 @@ a {
 #firstName {
     margin-right: 10px;
     resize: none;
+    
 }
 
 #email {
