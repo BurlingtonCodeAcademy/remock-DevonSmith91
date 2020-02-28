@@ -1,0 +1,497 @@
+body {
+    font-family: 'Abril Fatface';
+    color: rgba(12, 18, 26, 0.89);
+    font-size: 1em;
+    background-color: #c6ced8b6;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#home {
+    position: absolute;
+    display: inline-block;
+    width: 5vw;
+    height: 5vw;
+    font-size: 2.8em;
+    opacity: .5;
+    color: rgba(6, 35, 131, 0.774);
+}
+
+.emphasis {
+    font-weight: bold;
+    display: inline-block;
+}
+
+#section1 {
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+}
+
+#title {
+    font-size: 5rem;
+    text-shadow: 3px 3px rgba(31, 29, 29, 0.336);
+    display: block;
+    text-align: center;
+}
+
+.smallHeader {
+    font-size: 1.2rem;
+}
+
+.lineBreak {
+    border: solid 1px;
+    border-color: rgba(6, 60, 131, 0.432);
+    border-left: none;
+    border-right: none;
+    width: 60vw;
+    height: 5px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+/* Image row classes, can and SHOULD reuse?*/
+
+.imageRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 8vh;
+    width: 60vw;
+}
+
+.ImgWithSub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ImgWithSub-Wide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    height: 30vw;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.image {
+    width: 19vw;
+    height: auto;
+    margin-bottom: 35px;
+    box-shadow: 0 20px 30px -6px rgb(0, 0, 0);
+}
+
+.caption {
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+#moreButton {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+    background-color: rgba(6, 35, 131, 0.466);
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.952);
+    border: 1px solid;
+    border-color: rgb(2, 24, 97);
+}
+
+#pageIcon {
+    width: auto;
+    height: 3vh;
+    border-radius: 100%;
+}
+
+/* quote block */
+
+#quoteBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(140, 148, 175, 0.815);
+    width: auto;
+    height: 250px;
+    font-size: 3em;
+    text-shadow: rgb(239, 239, 243) 5x 5px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+
+/*2nd section*/
+
+#section2 {
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#wrapper2Blog {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paragraphHeader {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/* Left Column */
+
+#columnLeft {
+    width: 40vw;
+    margin-right: 50px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.wideImage {
+    width: 40vw;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    border: solid 5px rgba(63, 59, 59, 0.459);
+}
+
+#columnRight {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contReading {
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    width: auto;
+    background-color: rgba(6, 35, 131, 0.466);
+    padding: 10px;
+    /* color: rgba(255, 255, 255, 0.952); */
+    border: 1px solid;
+    border-color: rgb(2, 24, 97);
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+.contReading:hover {
+    background-color: rgb(53, 60, 94);
+}
+
+.buttonStyle {
+    display: flex;
+    align-items: center;
+    color: rgba(6, 60, 131, 0.747)
+}
+
+.buttonStyle:hover {
+    color: rgba(12, 17, 22, 0.925)
+}
+
+.lineBreakLeft {
+    border: solid 2px;
+    border-color: rgba(6, 60, 131, 0.432);
+    border-left: none;
+    border-right: none;
+    width: 40vw;
+    height: 5px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+/* Right Column Date Blurbs */
+
+.date {
+    display: flex;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+    width: 10vw;
+    justify-content: center;
+    border-radius: 5%;
+    background-color: rgba(1, 24, 98, 0.795);
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.952);
+    border: 1px solid;
+    border-color: rgb(2, 24, 97);
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+.date:hover {
+    background-color: rgba(46, 58, 99, 0.76);
+}
+
+.lineBreakRight {
+    border: solid;
+    border-color: rgba(6, 60, 131, 0.432);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 20vw;
+    height: 5px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+#dateSectionBreak {
+    border: solid;
+    border-color: rgba(6, 60, 131, 0.432);
+    border-left: none;
+    border-right: none;
+    width: 20vw;
+    height: 5px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+/* Right Column wrapped pictures */
+
+.wrappedPic {
+    float: left;
+    width: 10vw;
+    height: 10vw;
+    border: solid 5px rgba(63, 59, 59, 0.459);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.wrappedPicButton {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    background-color: rgba(6, 35, 131, 0.466);
+    padding: 5px;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.952);
+    border: 1px solid;
+    border-color: rgb(2, 24, 97);
+    font-size: .75rem;
+}
+
+#messageButton {
+    width: 12vw;
+    background-color: rgba(6, 35, 131, 0.466);
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.952);
+    border: 1px solid;
+    border-color: rgb(2, 24, 97);
+    text-align: center;
+    transition-duration: .1s;
+    transition-timing-function: linear
+}
+
+#messageButton:hover {
+    background-color: rgb(53, 60, 94);
+}
+
+/* Revised Flex Footer */
+
+#footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: .8em;
+    background-color: rgb(221, 214, 214);
+    margin-top: 10px;
+}
+
+#footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    background-color: rgb(221, 214, 214);
+    width: auto;
+}
+
+#footerTitle {
+    margin-top: 40px;
+}
+
+#textBox {
+    min-height: 8rem;
+    margin-bottom: 1rem;
+    resize: none;
+}
+
+#formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#firstLastName {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+#firstName {
+    margin-right: 10px;
+    resize: none;
+}
+
+#email {
+    resize: none;
+}
+
+#messageButton {
+    background-color: rgba(6, 35, 131, 0.466);
+    width: auto;
+}
+
+#bottomRow {
+    display: flex;
+}
+
+#contentHeader {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+#contactInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30vw;
+    margin-left: 1rem;
+    justify-content: space-between;
+}
+
+#contactTableWrapper {
+    display: flex;
+}
+
+#contactColumLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15vw;
+}
+
+#contactColumRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15vw;
+}
+
+.contact-item {
+    margin: 5px
+}
+
+@media screen and (max-width:750px) {
+    #section1 {
+        align-items: center;
+    }
+    .smallHeader {
+        text-align: center;
+    }
+    #home {
+        display: block;
+        position: static;
+    }
+    .imageRow {
+        display: flex;
+        flex-direction: column;
+    }
+    .image {
+        width: 50vw
+    }
+    .date {
+        margin: 10px;
+    }
+    .lineBreakRight {
+        margin: 10px;
+    }
+    #columnRight {
+        justify-content: center;
+        font-size: .75rem;
+    }
+    #columnLeft {
+        font-size: .9rem;
+    }
+    .contReading {
+        font-size: .6rem;
+    }
+    /* media query footer--------------------------------------------------------------------------------------------- */
+    body {
+        width: auto;
+    }
+    #footer {
+        font-size: .6rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    #footerWrapper {
+        display: block;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    #bottomRow {
+        align-self: center;
+    }
+    #contentHeader {
+        margin-top: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #contactTableWrapper{
+       display: flex;
+       flex-direction: row; 
+    }
+    #firstLastName {
+        margin: 10px;
+        width: auto;
+    }
+    #firstName {
+        width: auto;
+        resize: none;
+    }
+    #email {
+        resize: none;
+    }
+    #contactTableWrapper {
+        font-size: .5rem;
+    }
+    #contactInfo {
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+    }
+}
