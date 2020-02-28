@@ -155,7 +155,7 @@ a {
 }
 
 .paragraphHeader {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
 }
 
@@ -179,7 +179,6 @@ a {
 }
 
 #columnRight {
-    align-self: flex-start;
     width: 20vw;
     display: flex;
     flex-direction: column;
@@ -190,6 +189,7 @@ a {
     font-size: 1vw;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 5vh;
     width: auto;
     color: rgba(6, 60, 131, 0.747);
@@ -235,6 +235,12 @@ a {
     color: rgba(255, 255, 255, 0.952);
     border: 1px solid;
     border-color: rgb(2, 24, 97);
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+.date:hover {
+    background-color: rgba(46, 58, 99, 0.76);
 }
 
 .lineBreakRight {
@@ -289,22 +295,22 @@ a {
 
 /* Transition Effects */
 
-.fade-in{
+.fade-in {
     opacity: 0;
     transition: opacity 1000ms ease-in;
 }
 
-.fade-in1{
+.fade-in1 {
     opacity: 0;
     transition: opacity 1000ms ease-in;
 }
 
-.fade-in2{
+.fade-in2 {
     opacity: 0;
     transition: opacity 1000ms ease-in;
 }
 
-.fade-in.appear{
+.fade-in.appear {
     opacity: 1;
 }
 
@@ -331,6 +337,7 @@ a {
 }
 
 /* Revised Flex Footer */
+
 #footer {
     align-items: center;
     display: flex;
@@ -339,6 +346,7 @@ a {
     background-color: rgb(221, 214, 214);
     margin-top: 10px;
 }
+
 #footerWrapper {
     display: flex;
     justify-content: space-between;
@@ -346,69 +354,83 @@ a {
     background-color: rgb(221, 214, 214);
     width: auto;
 }
+
 #footerTitle {
     margin-top: 40px;
 }
+
 #textBox {
     min-height: 8rem;
     margin-bottom: 1rem;
     resize: none;
 }
+
 #sendMessage {
     margin-top: .1rem;
 }
+
 #formDiv {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 #firstLastName {
     display: flex;
     justify-content: center;
     margin: 0;
     margin-bottom: .5rem;
 }
+
 #firstName {
     margin-right: 10px;
     resize: none;
 }
+
 #email {
     resize: none;
 }
+
 #bottomRow {
     display: flex;
 }
+
 #contentHeader {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1rem;
 }
+
 #contactInfo {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 30vw;
     margin-left: 1rem;
-    justify-content: ;
 }
+
 #contactTableWrapper {
     display: flex;
 }
+
 #contactColumLeft {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 15vw;
 }
+
 #contactColumRight {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 15vw;
 }
+
 .contact-item {
     margin: 5px
 }
+
 @media screen and (max-width:750px) {
     #section1 {
         align-items: center;
@@ -471,9 +493,9 @@ a {
         justify-content: center;
         flex-wrap: wrap;
     }
-    #contactTableWrapper{
-       display: flex;
-       flex-direction: row; 
+    #contactTableWrapper {
+        display: flex;
+        flex-direction: row;
     }
     #firstLastName {
         margin: 10px;
