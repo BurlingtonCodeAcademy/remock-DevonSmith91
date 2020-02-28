@@ -1,8 +1,8 @@
 body {
     font-family: 'Abril Fatface';
-    color: rgba(6, 60, 131, 0.808);
+    color: rgba(12, 18, 26, 0.89);
     font-size: 1em;
-    background-color: rgba(244, 244, 253, 0.116);
+    background-color: #c6ced8b6;
     margin: 0px;
 }
 
@@ -40,13 +40,17 @@ a {
 
 #title {
     font-size: 5rem;
-    text-shadow: 4px 4px rgba(71, 68, 68, 0.199);
+    text-shadow: 3px 3px rgba(31, 29, 29, 0.336);
     display: block;
     text-align: center;
 }
 
+.smallHeader {
+    font-size: 1.2rem;
+}
+
 .lineBreak {
-    border: solid;
+    border: solid 1px;
     border-color: rgba(6, 60, 131, 0.432);
     border-left: none;
     border-right: none;
@@ -62,7 +66,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 12vh;
+    padding-top: 8vh;
     width: 60vw;
 }
 
@@ -85,14 +89,14 @@ a {
 }
 
 .image {
-    width: 18vw;
+    width: 19vw;
     height: auto;
     margin-bottom: 35px;
-    /* border: solid 3px rgba(63, 59, 59, 0.459); */
-    box-shadow: 3.5px 3.5px rgba(77, 75, 75, 0.418);
+    box-shadow: 0 20px 30px -6px rgb(0, 0, 0);
 }
 
 .caption {
+    margin-top: 10px;
     margin-bottom: 20px
 }
 
@@ -120,10 +124,11 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.411), rgba(15, 37, 110, 0.404), rgba(255, 255, 255, 0.753));
+    background: linear-gradient(#d8dde200, #939eacb6);
     width: auto;
     height: 250px;
     font-size: 3em;
+    box-shadow: 0 9px 10px -5px rgba(51, 51, 51, 0.658);
     text-shadow: rgb(164, 164, 168) 3px 3px;
     margin-bottom: 60px;
     margin-top: 50px;
@@ -186,20 +191,30 @@ a {
     justify-content: center;
     margin-top: 5vh;
     width: 12vw;
-    background-color: rgba(6, 35, 131, 0.466);
+    /* background-color: rgba(6, 35, 131, 0.466); */
     padding: 10px;
-    color: rgba(255, 255, 255, 0.952);
+    /* color: rgba(255, 255, 255, 0.952); */
     border: 1px solid;
-    border-color: rgb(2, 24, 97);
+    border-color: rgba(6, 60, 131, 0.747);
 }
 
 .buttonStyle {
     display: flex;
     align-items: center;
+    color: rgba(6, 60, 131, 0.747)
+}
+
+.buttonStyle:hover {
+    color: pink
+}
+
+.contReading:hover {
+    border-color: pink
 }
 
 .lineBreakLeft {
-    border: solid;
+    border: solid 2px;
+    border-color: rgba(6, 60, 131, 0.432);
     border-left: none;
     border-right: none;
     width: 40vw;
@@ -226,6 +241,7 @@ a {
 
 .lineBreakRight {
     border: solid;
+    border-color: rgba(6, 60, 131, 0.432);
     border-left: none;
     border-right: none;
     border-top: none;
@@ -237,6 +253,7 @@ a {
 
 #dateSectionBreak {
     border: solid;
+    border-color: rgba(6, 60, 131, 0.432);
     border-left: none;
     border-right: none;
     width: 20vw;
@@ -431,9 +448,22 @@ p {
 
 .slideIn {
     transform: translateX(140%);
-    transition: transform 400ms ease-in;
+    transition: opacity 600ms ease-in, transform 400ms ease-in;
+    opacity: 0;
+}
+
+.slideInImg {
+    transform: translateX(100%);
+    transition: opacity 600ms ease-in, transform 400ms ease-in;
+    opacity: 0;
 }
 
 .slideIn.appear {
-    transform: translatex(0)
+    transform: translatex(0);
+    opacity: 1;
+}
+
+.slideInImg.appear {
+    transform: translateX(0);
+    opacity: 1;
 }

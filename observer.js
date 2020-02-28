@@ -1,5 +1,6 @@
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slideIn')
+const sliderImg = document.querySelectorAll('.slideInImg')
 
 
 const appearOptions = {
@@ -29,5 +30,9 @@ faders.forEach(fader => {
 })
 
 sliders.forEach(slider => {
+    appearOnScroll.observe(slider)
+})
+
+sliderImg.forEach(slider => {
     appearOnScroll.observe(slider)
 })
