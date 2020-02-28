@@ -415,6 +415,16 @@ p {
     transition: opacity 1000ms ease-in;
 }
 
+.fade-in1{
+    opacity: 0;
+    transition: opacity 1000ms ease-in;
+}
+
+.fade-in2{
+    opacity: 0;
+    transition: opacity 1000ms ease-in;
+}
+
 .fade-in.appear{
     opacity: 1;
 }
