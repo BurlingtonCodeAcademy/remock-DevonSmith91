@@ -183,6 +183,7 @@ a {
     width: 20vw;
     display: flex;
     flex-direction: column;
+    /* overflow: hidden; */
 }
 
 .contReading {
@@ -308,13 +309,13 @@ a {
 }
 
 .slideIn {
-    transform: translateX(140%);
+    transform: translateX(60%);
     transition: opacity 600ms ease-in, transform 400ms ease-in;
     opacity: 0;
 }
 
 .slideInImg {
-    transform: translateX(70%);
+    transform: translateX(50%);
     transition: opacity 600ms ease-in, transform 350ms ease-in;
     opacity: 0;
 }
