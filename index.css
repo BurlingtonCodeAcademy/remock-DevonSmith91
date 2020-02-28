@@ -6,6 +6,21 @@ body {
     margin: 0px;
 }
 
+.pageload {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -377,7 +392,6 @@ a {
 
 #firstLastName {
     display: flex;
-    justify-self: ;
     justify-content: center;
     margin: 0;
     margin-bottom: .5rem;
@@ -386,7 +400,6 @@ a {
 #firstName {
     margin-right: 10px;
     resize: none;
-    
 }
 
 #email {
