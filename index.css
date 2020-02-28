@@ -198,6 +198,10 @@ a {
     border-color: rgba(6, 60, 131, 0.747);
 }
 
+.contReading:hover {
+    border-color: rgba(12, 17, 22, 0.925)
+}
+
 .buttonStyle {
     display: flex;
     align-items: center;
@@ -205,11 +209,7 @@ a {
 }
 
 .buttonStyle:hover {
-    color: pink
-}
-
-.contReading:hover {
-    border-color: pink
+    color: rgba(12, 17, 22, 0.925)
 }
 
 .lineBreakLeft {
