@@ -2,7 +2,6 @@ const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slideIn');
 const sliderImg = document.querySelectorAll('.slideInImg');
 
-
 const appearOptions = {
     threshold: 0
 };
