@@ -345,14 +345,6 @@ a {
     background-color: rgb(221, 214, 214);
     margin-top: 10px;
 }
-.iconContainer{
-    flex-direction: column;
-}
-.icon{
-    width:1rem;
-    height: 1rem;
-}
-
 
 #footerWrapper {
     display: flex;
@@ -422,20 +414,33 @@ a {
 
 #contactColumLeft {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 15vw;
 }
 
 #contactColumRight {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 15vw;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icon {
+    vertical-align: middle;
+    width: .9rem;
+    height: .9rem;
 }
 
 .contact-item {
     margin: 5px
 }
+
+/* Media Query  ---------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width:750px) {
     #section1 {
