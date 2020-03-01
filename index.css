@@ -2,7 +2,7 @@ body {
     font-family: 'Abril Fatface';
     color: rgba(12, 18, 26, 0.89);
     font-size: 1em;
-    background-color:#c6ced8b6;
+    background-color: #c6ced8b6;
     margin: 0px;
 }
 
@@ -66,16 +66,7 @@ a {
     align-items: center;
     opacity: 1;
     background: rgb(0, 0, 0);
-    background: linear-gradient(
-        90deg, 
-        rgba(0, 0, 0, 0) 0%, 
-        rgba(208, 202, 202, 1),
-        rgba(208, 202, 202, 1),
-        rgba(208, 202, 202, 1) 50%, 
-        rgba(208, 202, 202, 1),
-        rgba(208, 202, 202, 1),
-        rgba(0, 0, 0, 0) 
-        100%);
+    background: linear-gradient( 90deg, rgba(0, 0, 0, 0) 0%, rgba(208, 202, 202, 1), rgba(208, 202, 202, 1), rgba(208, 202, 202, 1) 50%, rgba(208, 202, 202, 1), rgba(208, 202, 202, 1), rgba(0, 0, 0, 0) 100%);
     width: 100vw;
 }
 
@@ -97,6 +88,7 @@ a {
 #section1 {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 #wrapper1 {
@@ -107,10 +99,14 @@ a {
 }
 
 #title {
-    font-size: 5rem;
+    font-size: calc(100vw/15);
     text-shadow: 3px 3px rgba(31, 29, 29, 0.336);
     display: block;
     text-align: center;
+}
+
+#subHead {
+    font-size: calc(100vw/50)
 }
 
 .smallHeader {
@@ -256,7 +252,6 @@ a {
     margin-top: 30px;
     margin-bottom: 35px;
     box-shadow: 0 22px 30px -6px rgb(0, 0, 0);
-
 }
 
 #columnRight {
@@ -356,7 +351,6 @@ a {
     margin-bottom: 20px;
     margin-top: 20px;
     box-shadow: 0 22px 30px -6px rgb(0, 0, 0);
-
 }
 
 .wrappedPicButton {
@@ -529,6 +523,15 @@ a {
     #section1 {
         align-items: center;
     }
+    #title {
+        font-size: calc(100vw/10);
+        text-shadow: 3px 3px rgba(31, 29, 29, 0.336);
+        display: block;
+        text-align: center;
+    }
+    #subHead {
+        font-size: calc(100vw/20)
+    }
     .smallHeader {
         text-align: center;
     }
@@ -550,7 +553,6 @@ a {
         margin: 10px;
     }
     #columnRight {
-        justify-content: center;
         font-size: .75rem;
     }
     #columnLeft {
@@ -611,4 +613,3 @@ a {
         justify-content: center;
     }
 }
-

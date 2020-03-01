@@ -41,7 +41,7 @@ sliderImg.forEach(slider => {
 const stickyContainers = document.querySelectorAll('.sticky-container');
 const stickyOptions = {
   rootMargin: '0px 0px -100% 0px',
-  threshold: 0
+  threshold: 0  
 };
 const stickyItems = new IntersectionObserver(addSticky, stickyOptions);
 
