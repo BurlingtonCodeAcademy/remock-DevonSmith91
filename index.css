@@ -163,8 +163,9 @@ a {
     align-items: center;
     width: 60vw;
     height: 30vw;
-    padding: 20px;
-    padding-top: 0;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    box-shadow: 0 32px 40px -6px rgb(0, 0, 0);
 }
 
 .image {
@@ -254,14 +255,14 @@ a {
     height: auto;
     margin-top: 30px;
     margin-bottom: 35px;
-    border: solid 5px rgba(63, 59, 59, 0.459);
+    box-shadow: 0 22px 30px -6px rgb(0, 0, 0);
+
 }
 
 #columnRight {
     width: 20vw;
     display: flex;
     flex-direction: column;
-    /* overflow: hidden; */
 }
 
 .contReading {
@@ -351,10 +352,11 @@ a {
     float: left;
     width: 10vw;
     height: 10vw;
-    border: solid 5px rgba(63, 59, 59, 0.459);
     margin-right: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
+    box-shadow: 0 22px 30px -6px rgb(0, 0, 0);
+
 }
 
 .wrappedPicButton {
@@ -414,8 +416,6 @@ a {
     transform: translateX(0);
     opacity: 1;
 }
-
-.testing {}
 
 /* Revised Flex Footer */
 
@@ -612,5 +612,3 @@ a {
     }
 }
 
-
-/*Testing*/
