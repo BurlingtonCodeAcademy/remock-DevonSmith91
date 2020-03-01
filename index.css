@@ -154,6 +154,11 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    transition: transform .2s ease;
+}
+
+.ImgWithSub:hover {
+    transform: scale(1.2)
 }
 
 .ImgWithSub-Wide {
