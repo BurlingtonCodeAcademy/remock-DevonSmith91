@@ -517,7 +517,7 @@ a {
     margin: 5px
 }
 
-/* Media Query  ---------------------------------------------------------------------------------------------------- */
+/* Media Query (Mobile)------------------------------------------------------------------------------------------------ */
 
 @media screen and (max-width:750px) {
     #section1 {
@@ -565,7 +565,7 @@ a {
     .sticky-container {
         display: none;
     }
-    .sticky-container.active{
+    .sticky-container.active {
         display: none;
     }
     .sticky-content {
@@ -597,11 +597,12 @@ a {
     #contentHeader {
         margin-top: 10px;
         justify-content: center;
+        text-align: center;
         flex-wrap: wrap;
     }
     #contactTableWrapper {
-        display: flex;
         flex-direction: row;
+        text-align: left;
     }
     #firstLastName {
         margin: 10px;
@@ -613,9 +614,6 @@ a {
     }
     #email {
         resize: none;
-    }
-    #contactTableWrapper {
-        font-size: .5rem;
     }
     #contactInfo {
         width: 300px;
