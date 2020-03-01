@@ -561,6 +561,16 @@ a {
     .contReading {
         font-size: .6rem;
     }
+    /* media query fade in bar---------------------------------------------------------------------------------------- */
+    .sticky-container {
+        display: none;
+    }
+    .sticky-container.active{
+        display: none;
+    }
+    .sticky-content {
+        display: none;
+    }
     /* media query footer--------------------------------------------------------------------------------------------- */
     body {
         width: auto;
