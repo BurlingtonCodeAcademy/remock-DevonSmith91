@@ -10,22 +10,30 @@
 </head>
 
 <body class="pageload">
-  <a id="home" href="index.html">
-    <div>HOME</div>
+  <a href="index.html">
+    <div id="home">HOME</div>
   </a>
   <div id="section1">
     <wrapper id="wrapper1">
       <div id="title">POST ONLY</div>
       <div class="smallHeader">A PAGE WITH JUST A BLOG POST'S CONTENT</div>
-      <div class="lineBreak"></div>
+      <div class="lineBreakSubPage"></div>
+  </div>
+  <div class='sticky-container'>
+    <div class='sticky-content'>
+    <div class='subTitle'>
+      POST ONLY
+    </div>
+  </div>
+  <div>
+  </div>
   </div>
   <div id="section2">
     <wrapper id="wrapper2Blog">
       <div class="paragraphHeader">THIS IS A <span class="emphasis">BLOG POST ONLY</span> LAYOUT</div>
       <div class="ImgWithSub">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRiSlSd--EYTXPQIktURgN6tl_kuKria7Pt3r70Lz1IpfbHXkf_"
-          alt="placeholder-image" class="ImgWithSub-Wide">
+        <img src="https://i.pinimg.com/originals/2e/b2/ea/2eb2ea133a134391c4dc8c4ab15945e6.jpg" alt="placeholder-image"
+          class="ImgWithSub-Wide">
       </div>
       <blog id="blog">
         <div class="paragraphHeader emphasis">SOMETHING INSIGHTFUL</div>
@@ -69,7 +77,7 @@
         <textarea id="textBox" placeholder="Message"></textarea>
         <div id="bottomRow">
           <a href="#">
-            <div id='sendMessage' class="buttonStyle contReading">SEND MESSAGE</div>
+            <div id='sendMessage' class="contReading">SEND MESSAGE</div>
           </a>
           <div></div>
         </div>
@@ -103,6 +111,7 @@
       </div>
     </div>
   </div>
+  <script src="observer.js"></script>
 </body>
 
 </html>

@@ -34,3 +34,26 @@ sliders.forEach(slider => {
 sliderImg.forEach(slider => {
     appearOnScroll.observe(slider)
 })
+
+
+//--------------------------------------------------------
+
+const stickyContainers = document.querySelectorAll('.sticky-container');
+const stickyOptions = {
+  rootMargin: '0px 0px -100% 0px',
+  threshold: 0
+};
+const stickyItems = new IntersectionObserver(addSticky, stickyOptions);
+
+stickyContainers.forEach(element => {
+  stickyItems.observe(element);
+  console.log('i hit the top')
+});
+
+function addSticky (entries, observer) {
+  entries.forEach(entry => {
+    entry.target.classList.toggle('active', entry.isIntersecting);
+    console.log('i also hit the top')
+  });
+}
+
