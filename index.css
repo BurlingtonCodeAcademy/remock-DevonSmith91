@@ -142,7 +142,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 8vh;
-    width: 60vw;
+    width: auto;
 }
 
 .ImgWithSub {
@@ -150,6 +150,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 20px
 }
 
 .ImgWithSub-Wide {
@@ -169,6 +170,11 @@ a {
     height: auto;
     margin-bottom: 35px;
     box-shadow: 0 20px 30px -6px rgb(0, 0, 0);
+    transition: transform .2s ease;
+}
+
+.image:hover {
+    transform: scale(1.2);
 }
 
 .caption {
