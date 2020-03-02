@@ -1,10 +1,4 @@
-body {
-    font-family: 'Abril Fatface';
-    color: rgba(12, 18, 26, 0.89);
-    font-size: 1em;
-    background-color: #c6ced8b6;
-    margin: 0px;
-}
+/* Fade in Animation for page load */
 
 .pageload {
     animation: fadeInAnimation ease .85s;
@@ -19,6 +13,16 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+/* CSS on Body */
+
+body {
+    font-family: 'Abril Fatface';
+    color: rgba(12, 18, 26, 0.89);
+    font-size: 1em;
+    background-color: #c6ced8b6;
+    margin: 0px;
 }
 
 a {
@@ -45,45 +49,17 @@ a {
     z-index: 1;
 }
 
+#home:hover {
+    color: rgba(12, 17, 22, 0.925);
+    border-color: rgba(12, 17, 22, 0.925);
+}
+
 .emphasis {
     font-weight: bold;
     display: inline-block;
 }
 
-.sticky-container {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    height: 70px;
-    width: auto;
-    margin-bottom: 20px;
-}
-
-.sticky-container.active .sticky-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    background: rgb(0, 0, 0);
-    background: linear-gradient( 90deg, rgba(0, 0, 0, 0) 0%, rgba(208, 202, 202, 1), rgba(208, 202, 202, 1), rgba(208, 202, 202, 1) 50%, rgba(208, 202, 202, 1), rgba(208, 202, 202, 1), rgba(0, 0, 0, 0) 100%);
-    width: 100vw;
-}
-
-.sticky-content {
-    background-color: #c6ced8b6;
-    display: flex;
-    justify-content: center;
-    opacity: 0;
-    transition: 0.3s;
-    min-height: 50px;
-    width: auto;
-}
-
-.subTitle {
-    text-align: center;
-    font-size: 3em;
-}
+/* Section 1 */
 
 #section1 {
     display: flex;
@@ -286,11 +262,6 @@ a {
     color: rgba(12, 17, 22, 0.925)
 }
 
-#home:hover {
-    color: rgba(12, 17, 22, 0.925);
-    border-color: rgba(12, 17, 22, 0.925);
-}
-
 .lineBreakLeft {
     border: solid 2px;
     border-color: rgba(6, 60, 131, 0.432);
@@ -375,6 +346,41 @@ a {
 }
 
 /* Transition Effects */
+
+.sticky-container {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 70px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.sticky-container.active .sticky-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    background: rgb(0, 0, 0);
+    background: linear-gradient( 90deg, rgba(0, 0, 0, 0) 0%, rgba(208, 202, 202, 1), rgba(208, 202, 202, 1), rgba(208, 202, 202, 1) 50%, rgba(208, 202, 202, 1), rgba(208, 202, 202, 1), rgba(0, 0, 0, 0) 100%);
+    width: 100vw;
+}
+
+.sticky-content {
+    background-color: #c6ced8b6;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+    min-height: 50px;
+    width: auto;
+}
+
+.subTitle {
+    text-align: center;
+    font-size: 3em;
+}
 
 .fade-in {
     opacity: 0;
