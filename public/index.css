@@ -583,6 +583,12 @@ a {
     .sticky-content {
         display: none;
     }
+    .slideIn {
+        transform: translatex(0);
+    }
+    .slideInImg {
+        transform: translatex(0);
+    }
     /* media query footer--------------------------------------------------------------------------------------------- */
     body {
         width: auto;
