@@ -58,7 +58,6 @@ const stickyItems = new IntersectionObserver(addSticky, stickyOptions);
 function addSticky (entries, observer) {
   entries.forEach(entry => {
     entry.target.classList.toggle('active', entry.isIntersecting);
-    console.log('i also hit the top')
   });
 }
 
@@ -66,6 +65,5 @@ function addSticky (entries, observer) {
 
 stickyContainers.forEach(element => {
     stickyItems.observe(element);
-    console.log('i hit the top')
   });
 
